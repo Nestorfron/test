@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../src/styles/index.css';
-import App from './App';
+import '../src/front/styles/index.css';
 import reportWebVitals from './reportWebVitals';
-import AppContext from "./store/AppContext";
+import AppContext from "../src/front/store/AppContext";
+import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AppContext>
-      <App />
+      <Layout />
     </AppContext> 
   </React.StrictMode>
 );

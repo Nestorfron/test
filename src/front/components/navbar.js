@@ -5,7 +5,7 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Navbar
 
 
 
-function Nav_bar() {
+function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     "Profile",
@@ -80,5 +80,5 @@ function Nav_bar() {
   );
 }
 
-export default Nav_bar;
+export default NavBar;
 

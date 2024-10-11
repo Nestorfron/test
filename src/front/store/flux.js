@@ -1,5 +1,3 @@
-import { jsx } from "react/jsx-runtime";
-
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
