@@ -1,3 +1,4 @@
+import { jsx } from "react/jsx-runtime";
 
 const getState = ({ getStore, getActions, setStore }) => {
   return {
@@ -29,7 +30,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/signup",
+            process.env.REACT_APP_BACKEND_URL + "/api/signup",
             {
               method: "POST",
               headers: {
@@ -65,7 +66,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       login: async (user_name, password) => {
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/signin",
+            process.env.REACT_APP_BACKEND_URL + "/api/signin",
             {
               method: "POST",
               headers: {
@@ -99,7 +100,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const jwt = localStorage.getItem("token");
 
         try {
-          const response = await fetch(process.env.BACKEND_URL + "/api/me", {
+          const response = await fetch(process.env.REACT_APP_BACKEND_URL + "/api/me", {
             method: "GET",
             headers: {
               authorization: `Bearer ${jwt}`,
@@ -107,7 +108,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           });
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ me: data });
           }
         } catch (error) {
@@ -121,7 +121,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const jwt = localStorage.getItem("token");
 
         try {
-          const response = await fetch(process.env.BACKEND_URL + "/api/users", {
+          const response = await fetch(process.env.REACT_APP_BACKEND_URL + "/api/users", {
             method: "GET",
             headers: {
               authorization: `Bearer ${jwt}`,
@@ -129,7 +129,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           });
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ users: data.users });
           }
         } catch (error) {
@@ -144,7 +143,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/providers",
+            process.env.REACT_APP_BACKEND_URL + "/api/providers",
             {
               method: "GET",
               headers: {
@@ -154,7 +153,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           );
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ providers: data.providers });
           }
         } catch (error) {
@@ -169,7 +167,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/branchs",
+            process.env.REACT_APP_BACKEND_URL + "/api/branchs",
             {
               method: "GET",
               headers: {
@@ -179,7 +177,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           );
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ branchs: data.branchs });
           }
         } catch (error) {
@@ -194,7 +191,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/assets",
+            process.env.REACT_APP_BACKEND_URL + "/api/assets",
             {
               method: "GET",
               headers: {
@@ -204,7 +201,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           );
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ assets: data.assets });
           }
         } catch (error) {
@@ -219,7 +215,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/usersMB",
+            process.env.REACT_APP_BACKEND_URL + "/api/usersMB",
             {
               method: "GET",
               headers: {
@@ -229,7 +225,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           );
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ usersMB: data.usersMB });
           }
         } catch (error) {
@@ -244,7 +239,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/migrations",
+            process.env.REACT_APP_BACKEND_URL + "/api/migrations",
             {
               method: "GET",
               headers: {
@@ -254,7 +249,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           );
           const data = await response.json();
           if (response.ok) {
-            console.log(data)
             setStore({ migrations: data.migrations });
           }
         } catch (error) {
@@ -276,7 +270,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/add_branch",
+            process.env.REACT_APP_BACKEND_URL + "/api/add_branch",
             {
               method: "POST",
               headers: {
@@ -309,7 +303,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/add_provider",
+            process.env.REACT_APP_BACKEND_URL + "/api/add_provider",
             {
               method: "POST",
               headers: {
@@ -348,7 +342,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/add_asset",
+            process.env.REACT_APP_BACKEND_URL + "/api/add_asset",
             {
               method: "POST",
               headers: {
@@ -391,7 +385,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/add_userMB",
+            process.env.REACT_APP_BACKEND_URL + "/api/add_userMB",
             {
               method: "POST",
               headers: {
@@ -434,7 +428,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/add_migration",
+            process.env.REACT_APP_BACKEND_URL + "/api/add_migration",
             {
               method: "POST",
               headers: {
@@ -481,7 +475,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/editUser",
+            process.env.REACT_APP_BACKEND_URL + "/api/editUser",
             {
               method: "PUT",
               headers: {
@@ -525,7 +519,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/edit_branch",
+            process.env.REACT_APP_BACKEND_URL + "/api/edit_branch",
             {
               method: "PUT",
               headers: {
@@ -559,7 +553,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/edit_provider",
+            process.env.REACT_APP_BACKEND_URL + "/api/edit_provider",
             {
               method: "PUT",
               headers: {
@@ -600,7 +594,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/edit_asset",
+            process.env.REACT_APP_BACKEND_URL + "/api/edit_asset",
             {
               method: "PUT",
               headers: {
@@ -654,7 +648,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/edit_userMB",
+            process.env.REACT_APP_BACKEND_URL + "/api/edit_userMB",
             {
               method: "PUT",
               headers: {
@@ -697,7 +691,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/edit_migration",
+            process.env.REACT_APP_BACKEND_URL + "/api/edit_migration",
             {
               method: "PUT",
               headers: {
@@ -733,7 +727,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/delete_branch",
+            process.env.REACT_APP_BACKEND_URL + "/api/delete_branch",
             {
               method: "DELETE",
               headers: {
@@ -763,7 +757,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/delete_provider",
+            process.env.REACT_APP_BACKEND_URL + "/api/delete_provider",
             {
               method: "DELETE",
               headers: {
@@ -793,7 +787,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/delete_asset",
+            process.env.REACT_APP_BACKEND_URL + "/api/delete_asset",
             {
               method: "DELETE",
               headers: {
@@ -823,7 +817,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/delete_userMB",
+            process.env.REACT_APP_BACKEND_URL + "/api/delete_userMB",
             {
               method: "DELETE",
               headers: {
@@ -853,7 +847,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         const actions = getActions();
         try {
           const response = await fetch(
-            process.env.BACKEND_URL + "/api/delete_migration",
+            process.env.REACT_APP_BACKEND_URL + "/api/delete_migration",
             {
               method: "DELETE",
               headers: {
