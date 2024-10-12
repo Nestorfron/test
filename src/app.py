@@ -12,6 +12,7 @@ from api.admin import setup_admin
 from api.commands import setup_commands
 from flask_jwt_extended import JWTManager
 
+
 # from models import Person
 
 ENV = "development" if os.getenv("FLASK_DEBUG") == "1" else "production"
@@ -34,10 +35,11 @@ app.config['JWT_SECRET_KEY'] = os.environ.get("FLASK_APP_KEY")
 MIGRATE = Migrate(app, db, compare_type=True)
 db.init_app(app)
 
-JWTManager(app)
-
 # add the admin
+# if os.environ.get("PRODUCTION") == False:
 setup_admin(app)
+
+JWTManager(app)
 
 # add the admin
 setup_commands(app)
