@@ -3,7 +3,7 @@ import getState from "./flux";
 
 export const Context = React.createContext(null);
 
-const AppContext = ({  }) => {
+const AppContext = ({}) => {
   const [state, setState] = useState(
     getState({
       getStore: () => state.store,
@@ -11,8 +11,8 @@ const AppContext = ({  }) => {
       setStore: (updatedStore) =>
         setState({
           store: Object.assign(state.store, updatedStore),
-          actions: { ...state.actions },
-        }),
+          actions: { ...state.actions }
+        })
     })
   );
 
