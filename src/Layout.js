@@ -14,7 +14,7 @@ function Layout({}) {
         <BrowserRouter >
           <NavBar />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<h1>Dashboard</h1>} />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
         </BrowserRouter>
