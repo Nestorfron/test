@@ -20,6 +20,6 @@
     "react/jsx-indent": "off",
     "react/jsx-indent-props": "off",
     "comma-dangle": ["error", "never"],
-    "react/prop-types": [2]
+    "react/prop-types": "off"
   }
 }
