@@ -13,7 +13,7 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem,
+  
 } from "@nextui-org/navbar";
 
 import {
