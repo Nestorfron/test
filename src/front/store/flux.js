@@ -7,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       assets: [],
       usersMB: [],
       migrations: [],
-      role: ["Master", "Admin", "Ingeniero de Campo"],
+      role: ["Master", "Admin", "Ingeniero de Campo"]
     },
     actions: {
       ////////////  USER SECTION //////////////////
@@ -43,7 +43,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 employee_number,
                 subzone,
                 is_active,
-                role,
+                role
               }),
             }
           );
@@ -279,7 +279,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 branch_cr,
                 branch_address,
                 branch_zone,
-                branch_subzone,
+                branch_subzone
               }),
             }
           );
@@ -312,7 +312,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 branch_id,
                 company_name,
                 rfc,
-                service,
+                service
               }),
             }
           );
@@ -353,7 +353,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 asset_model,
                 asset_serial,
                 asset_inventory_number,
-                provider_id,
+                provider_id
               }),
             }
           );
@@ -397,7 +397,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 last_names,
                 employee_number,
                 branch_id,
-                asset_id,
+                asset_id
               }),
             }
           );
@@ -439,7 +439,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 migration_description,
                 migration_status,
                 provider_id,
-                branch_id,
+                branch_id
               }),
             }
           );
@@ -489,7 +489,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 employee_number,
                 subzone,
                 is_active,
-                role,
+                role
               }),
             }
           );
@@ -529,7 +529,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 branch_cr,
                 branch_address,
                 branch_zone,
-                branch_subzone,
+                branch_subzone
               }),
             }
           );
@@ -563,7 +563,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 id,
                 company_name,
                 rfc,
-                service,
+                service
               }),
             }
           );
@@ -605,7 +605,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 asset_brand,
                 asset_model,
                 asset_serial,
-                asset_inventory_number,
+                asset_inventory_number
               }),
             }
           );
@@ -661,7 +661,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 last_names,
                 employee_number,
                 branch_id,
-                asset_id,
+                asset_id
               }),
             }
           );
@@ -701,7 +701,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 installation_date,
                 migration_date,
                 migration_description,
-                migration_status,
+                migration_status
               }),
             }
           );
@@ -733,7 +733,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 authorization: `Bearer ${jwt}`,
               },
               body: JSON.stringify({
-                id,
+                id
               }),
             }
           );
@@ -763,7 +763,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 authorization: `Bearer ${jwt}`,
               },
               body: JSON.stringify({
-                id,
+                id
               }),
             }
           );
@@ -793,7 +793,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 authorization: `Bearer ${jwt}`,
               },
               body: JSON.stringify({
-                id,
+                id
               }),
             }
           );
@@ -823,7 +823,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 authorization: `Bearer ${jwt}`,
               },
               body: JSON.stringify({
-                id,
+                id
               }),
             }
           );
@@ -853,7 +853,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 authorization: `Bearer ${jwt}`,
               },
               body: JSON.stringify({
-                id,
+                id
               }),
             }
           );
