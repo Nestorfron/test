@@ -10,7 +10,7 @@ import {
   ModalHeader,
   ModalContent,
   ModalBody,
-  useDisclosure,
+  useDisclosure
 } from "@nextui-org/react";
 
 export const CreateBranches = () => {
@@ -32,7 +32,7 @@ export const CreateBranches = () => {
       Swal.fire({
         icon: "error",
         title: "Error",
-        text: "No se ha seleccionado ningún archivo.",
+        text: "No se ha seleccionado ningún archivo."
       });
       return;
     }
@@ -65,7 +65,7 @@ export const CreateBranches = () => {
           )}</b></p>
                <p>El archivo debe tener las siguientes columnas en el encabezado: ${expectedColumns.join(
                  ", "
-               )}</p>`,
+               )}</p>`
         });
         return;
       }
@@ -85,7 +85,7 @@ export const CreateBranches = () => {
       Swal.fire({
         icon: "success",
         title: "Archivo procesado correctamente",
-        text: "Las sucursales han sido agregadas.",
+        text: "Las sucursales han sido agregadas."
       });
     };
 

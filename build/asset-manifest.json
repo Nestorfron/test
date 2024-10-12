@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c5d6047.css",
-    "main.js": "/static/js/main.f329ccad.js",
+    "main.css": "/static/css/main.15ae9a68.css",
+    "main.js": "/static/js/main.241d9c22.js",
     "static/js/453.f2ff7999.chunk.js": "/static/js/453.f2ff7999.chunk.js",
+    "static/media/drapp_logo.png": "/static/media/drapp_logo.160a0cd5a264d8502b93.png",
     "index.html": "/index.html",
-    "main.5c5d6047.css.map": "/static/css/main.5c5d6047.css.map",
-    "main.f329ccad.js.map": "/static/js/main.f329ccad.js.map",
+    "main.15ae9a68.css.map": "/static/css/main.15ae9a68.css.map",
+    "main.241d9c22.js.map": "/static/js/main.241d9c22.js.map",
     "453.f2ff7999.chunk.js.map": "/static/js/453.f2ff7999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c5d6047.css",
-    "static/js/main.f329ccad.js"
+    "static/css/main.15ae9a68.css",
+    "static/js/main.241d9c22.js"
   ]
 }

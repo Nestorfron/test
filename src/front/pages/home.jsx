@@ -8,7 +8,7 @@ import {
   Link,
   Button,
   Card,
-  CardBody,
+  CardBody
 } from "@nextui-org/react";
 import img from "../img/drapp_logo.png";
 import { useTheme } from "next-themes";

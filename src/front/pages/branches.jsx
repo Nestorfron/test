@@ -15,7 +15,7 @@ import {
     TableRow,
     TableColumn,
     Input,
-    Pagination,
+    Pagination
   } from "@nextui-org/react";
   
 export const Branches = () => {
@@ -58,7 +58,7 @@ export const Branches = () => {
       icon: "warning",
       showDenyButton: true,
       denyButtonText: "No",
-      confirmButtonText: "Sí",
+      confirmButtonText: "Sí"
     }).then((click) => {
       if (click.isConfirmed) {
         actions.deleteBranch(id).then(() => {

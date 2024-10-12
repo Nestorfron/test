@@ -8,7 +8,7 @@ import {
   ModalBody,
   ModalFooter,
   useDisclosure,
-  Tooltip,
+  Tooltip
 } from "@nextui-org/react";
 import { EditIcon } from "../components/EditIcon.jsx";
 export const EditAssets = ({ asset }) => {

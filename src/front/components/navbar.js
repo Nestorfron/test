@@ -12,7 +12,7 @@ import {
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
-  NavbarMenu,
+  NavbarMenu
   
 } from "@nextui-org/navbar";
 
@@ -21,7 +21,7 @@ import {
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
-  Avatar,
+  Avatar
 } from "@nextui-org/react";
 
 export const NavBar = () => {
@@ -134,7 +134,7 @@ export const NavBar = () => {
             "provider",
             "assets",
             "usersMb",
-            "migrations",
+            "migrations"
           ].map((item) => (
             <li key={item}>
               <Button

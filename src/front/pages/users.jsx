@@ -19,12 +19,12 @@ import {
   DropdownMenu,
   DropdownItem,
   Pagination,
-  Chip,
+  Chip
 } from "@nextui-org/react";
 
 const statusColorMap = {
   active: "success",
-  inactive: "danger",
+  inactive: "danger"
 };
 
 export const Users = () => {

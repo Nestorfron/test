@@ -11,9 +11,9 @@ import {
   TableRow,
   TableColumn,
   Input,
-  Pagination,
+  Pagination
 } from "@nextui-org/react";
-import { DeleteIcon } from "../components/DeleteIcon.jsx"
+import { DeleteIcon } from "../components/DeleteIcon.jsx";
 import { SearchIcon } from "../components/SearchIcon.jsx";
 import { CreateAssets } from "../components/CreateAsset.jsx";
 import { EditAssets } from "../components/EditAssets.jsx";
@@ -62,7 +62,7 @@ export const Assets = () => {
       icon: "warning",
       showDenyButton: true,
       denyButtonText: "No",
-      confirmButtonText: "Sí",
+      confirmButtonText: "Sí"
     }).then((click) => {
       if (click.isConfirmed) {
         actions.deleteAsset(id).then(() => {

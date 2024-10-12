@@ -6,7 +6,7 @@ import {
   ModalContent,
   ModalHeader,
   ModalBody,
-  useDisclosure,
+  useDisclosure
 } from "@nextui-org/react";
 import { EditIcon } from "../components/EditIcon.jsx";
 export const EditBranches = ({ branch }) => {

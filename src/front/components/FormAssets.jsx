@@ -13,7 +13,7 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
       asset_model: "",
       asset_serial: "",
       asset_inventory_number: "",
-      provider_id: "",
+      provider_id: ""
     });
   
     const [loading, setLoading] = useState(false);
@@ -39,8 +39,8 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
           popup: "custom-popup",
           title: "custom-title",
           content: "custom-content",
-          confirmButton: "custom-confirm-button",
-        },
+          confirmButton: "custom-confirm-button"
+        }
       });
       try {
         const response = id
@@ -72,8 +72,8 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
             popup: "custom-popup",
             title: "custom-title",
             content: "custom-content",
-            confirmButton: "custom-confirm-button",
-          },
+            confirmButton: "custom-confirm-button"
+          }
         }).then(() => {});
         if (!id) {
           setAsset({
@@ -82,7 +82,7 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
             asset_model: "",
             asset_serial: "",
             asset_inventory_number: "",
-            provider_id: "",
+            provider_id: ""
           });
         }
       } catch (error) {
@@ -95,8 +95,8 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
             popup: "custom-popup",
             title: "custom-title",
             content: "custom-content",
-            confirmButton: "custom-confirm-button",
-          },
+            confirmButton: "custom-confirm-button"
+          }
         });
       } finally {
         setLoading(false);
@@ -117,7 +117,7 @@ export const FormAssets = ({ id, btnAsset, asset: initialAsset }) => {
           asset_model: initialAsset.asset_model || "",
           asset_serial: initialAsset.asset_serial || "",
           asset_inventory_number: initialAsset.asset_inventory_number || "",
-          provider_id: initialAsset.provider_id,
+          provider_id: initialAsset.provider_id
         });
       }
     }, []);

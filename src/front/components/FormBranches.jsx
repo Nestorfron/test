@@ -11,7 +11,7 @@ export const FormBranches = ({ id, btnBranch, branch: initialBranch }) => {
     branch_cr: "",
     branch_address: "",
     branch_zone: "",
-    branch_subzone: "",
+    branch_subzone: ""
   });
 
   const [loading, setLoading] = useState(false);
@@ -38,8 +38,8 @@ export const FormBranches = ({ id, btnBranch, branch: initialBranch }) => {
         popup: "custom-popup",
         title: "custom-title",
         content: "custom-content",
-        confirmButton: "custom-confirm-button",
-      },
+        confirmButton: "custom-confirm-button"
+      }
     });
     try {
       const response = id
@@ -67,15 +67,15 @@ export const FormBranches = ({ id, btnBranch, branch: initialBranch }) => {
           popup: "custom-popup",
           title: "custom-title",
           content: "custom-content",
-          confirmButton: "custom-confirm-button",
-        },
+          confirmButton: "custom-confirm-button"
+        }
       });
       if (!id) {
         setBranch({
           branch_cr: "",
           branch_address: "",
           branch_zone: "",
-          branch_subzone: "",
+          branch_subzone: ""
         });
       }
     } catch (error) {
@@ -88,8 +88,8 @@ export const FormBranches = ({ id, btnBranch, branch: initialBranch }) => {
           popup: "custom-popup",
           title: "custom-title",
           content: "custom-content",
-          confirmButton: "custom-confirm-button",
-        },
+          confirmButton: "custom-confirm-button"
+        }
       });
     } finally {
       setLoading(false);
@@ -108,7 +108,7 @@ export const FormBranches = ({ id, btnBranch, branch: initialBranch }) => {
         branch_cr: initialBranch.branch_cr || "",
         branch_address: initialBranch.branch_address || "",
         branch_zone: initialBranch.branch_zone || "",
-        branch_subzone: initialBranch.branch_subzone || "",
+        branch_subzone: initialBranch.branch_subzone || ""
       });
     }
   }, [initialBranch, actions, navigate]);
