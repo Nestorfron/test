@@ -2,7 +2,7 @@ import React from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "../src/front/styles/App.css";
-import NavBar from "../src/front/components/navbar";
+import {NavBar} from "../src/front/components/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./front/pages/dashboard";
 
