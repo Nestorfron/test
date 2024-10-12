@@ -4,7 +4,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "../src/front/styles/App.css";
 import {NavBar} from "../src/front/components/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./front/pages/dashboard";
+import Home from "./front/pages/home.jsx";
 
 
 function Layout({}) {
@@ -14,7 +14,7 @@ function Layout({}) {
         <BrowserRouter >
           <NavBar />
           <Routes>
-            <Route path="/" element={<h1>Dashboard</h1>} />
+            <Route path="/" element={<Home />} />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
         </BrowserRouter>
