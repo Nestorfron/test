@@ -3,7 +3,7 @@ import getState from "./flux";
 
 export const Context = React.createContext(null);
 
-const AppContext = ({ children }) => {
+const AppContext = ({  }) => {
   const [state, setState] = useState(
     getState({
       getStore: () => state.store,
@@ -20,7 +20,7 @@ const AppContext = ({ children }) => {
     // Aquí puedes realizar peticiones fetch o inicializar el estado global al cargar la app
   }, []);
 
-  return <Context.Provider value={state}>{children}</Context.Provider>;
+  return <Context.Provider value={state}>{}</Context.Provider>;
 };
 
 export default AppContext;

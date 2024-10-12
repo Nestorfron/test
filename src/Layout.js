@@ -5,18 +5,16 @@ import "../src/front/styles/App.css";
 import {NavBar} from "../src/front/components/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./front/pages/dashboard";
-import { Branches } from "./front/pages/branches.jsx";
 
-function Layout({ Component, pageProps }) {
+
+function Layout({}) {
   return (
     <NextUIProvider>
       <NextThemesProvider attribute="class" defaultTheme="dark">
-        <BrowserRouter {...pageProps}>
+        <BrowserRouter >
           <NavBar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/branches" element={<Branches />} />
-            <Route path="/assets" element={<h1>Assets</h1>} />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
         </BrowserRouter>
